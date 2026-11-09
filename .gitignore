@@ -8,3 +8,13 @@
 # testing
 /coverage
 
+# production
+/build
+/dist
+/.vite
+
+# misc
+.DS_Store
+.env
+.env.*
+!.env.example
