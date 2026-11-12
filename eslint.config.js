@@ -18,3 +18,13 @@ export default [
         sourceType: "module",
       },
     },
+    plugins: {
+      "react-hooks": reactHooks,
+    },
+    rules: {
+      ...reactHooks.configs.recommended.rules,
+      "no-unused-vars": ["error", { varsIgnorePattern: "^[A-Z_]" }],
+      "react-hooks/set-state-in-effect": "off",
+    },
+  },
+];
